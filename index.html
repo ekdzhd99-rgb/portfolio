@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>황인진 | AI 코딩 · 레고 에뉴케이션 · 디지털 리터러시 전문가</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    <style>
+        body { font-family: 'Pretendard', sans-serif; scroll-behavior: smooth; }
+        .glass-header { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); }
+        .award-card { background: linear-gradient(135deg, #fffcf5 0%, #fff3d6 100%); border: 1px solid #fcd34d; }
+        .infographic-box { background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%); }
+        .network-card { @apply p-6 bg-slate-50 rounded-3xl border border-slate-100 flex flex-col justify-center items-center text-center transition-all hover:bg-white hover:shadow-xl hover:-translate-y-1; }
+        .badge-premium { @apply px-4 py-1.5 rounded-full text-[11px] font-black uppercase tracking-wider shadow-sm border; }
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 40px;
+            height: 4px;
+            background: #3b82f6;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-900 leading-relaxed">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-header border-b border-slate-100 font-black">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <span class="text-2xl font-black tracking-tighter text-slate-900 uppercase">Hwang Injin</span>
+            <div class="hidden md:flex gap-10 text-sm font-black text-slate-500 uppercase tracking-widest">
+                <a href="#about" class="hover:text-blue-600 transition-colors">소개</a>
+                <a href="#awards" class="hover:text-blue-600 transition-colors">수상/자격</a>
+                <a href="#experience" class="hover:text-blue-600 transition-colors">강의경력</a>
+                <a href="#network" class="hover:text-blue-600 transition-colors">출강처</a>
+                <a href="#education" class="hover:text-blue-600 transition-colors">이수교육</a>
+            </div>
+            <!-- Contact Me 버튼에 이메일 주소 연결 -->
+            <a href="mailto:ekdzhd99@gmail.com" class="bg-slate-900 text-white px-7 py-3 rounded-full text-xs font-black hover:bg-blue-800 transition-all shadow-xl shadow-slate-200 uppercase tracking-widest">Contact Me</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="pt-56 pb-32 px-6 bg-gradient-to-b from-slate-50 to-white">
+        <div class="max-w-5xl mx-auto text-center font-black">
+            <div class="inline-flex items-center gap-2 px-4 py-2 mb-10 text-xs font-black tracking-widest text-blue-700 uppercase bg-blue-50 rounded-xl border border-blue-100 font-black">
+                AI · LEGO · DIGITAL LITERACY SPECIALIST
+            </div>
+            <h1 class="text-5xl md:text-7xl font-black mb-10 leading-[1.05] tracking-tight text-slate-900">
+                기술과 경험으로 미래를 설계하는<br>
+                <span class="text-sky-400">황인진</span> 입니다.
+            </h1>
+            
+            <!-- 강사 이미지 섹션 -->
+            <div class="flex justify-center mb-12">
+                <div class="relative">
+                    <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full border-8 border-white bg-white shadow-2xl overflow-hidden flex items-center justify-center p-4">
+                        <div class="absolute inset-0 bg-slate-50 opacity-50"></div>
+                        <img src="https://drive.google.com/thumbnail?id=1QHR1SmRpsCy-GemW5WSWOBYpMLSu5__C&sz=w1000" 
+                             alt="황인진 강사" 
+                             class="relative w-full h-full object-contain transition-opacity duration-500"
+                             onload="this.style.opacity='1'"
+                             style="opacity: 0;">
+                    </div>
+                    <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-blue-600 text-white px-8 py-2 rounded-full text-[11px] font-black tracking-widest shadow-lg z-10 whitespace-nowrap">
+                        CERTIFIED TRAINER JIN
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-xl md:text-2xl text-slate-500 max-w-4xl mx-auto leading-relaxed font-bold">
+                "2019년부터 축적된 풍부한 현장 교육 노하우를 바탕으로<br>
+                레고 에듀케이션, 파이썬 AI 코딩, 그리고 디지털 리터러시까지<br>
+                SW 교육의 전 과정을 아우르는 <strong class="text-slate-900 font-black">미래 인재 교육 전문가</strong>입니다."
+            </p>
+        </div>
+    </section>
+
+    <!-- Infographic Summary -->
+    <section class="py-16 bg-white px-6 font-black">
+        <div class="max-w-6xl mx-auto font-black">
+            <div class="grid md:grid-cols-3 gap-8 font-black">
+                <div class="infographic-box p-10 rounded-[48px] text-center shadow-sm border border-slate-50 transition-all hover:-translate-y-1 font-black">
+                    <p class="text-blue-600 font-black text-[10px] uppercase tracking-[0.2em] mb-3 font-black">Professional Since</p>
+                    <h4 class="text-4xl font-black text-slate-900 tracking-tighter italic font-black font-black">2019년</h4>
+                </div>
+                <div class="infographic-box p-10 rounded-[48px] text-center shadow-sm border border-slate-50 transition-all hover:-translate-y-1 font-black font-black">
+                    <p class="text-blue-600 font-black text-[10px] uppercase tracking-[0.2em] mb-3 font-black font-black">Public Recognition</p>
+                    <h4 class="text-4xl font-black text-slate-900 tracking-tighter italic font-black font-black">협회장상 수상</h4>
+                </div>
+                <div class="infographic-box p-10 rounded-[48px] text-center shadow-sm border border-slate-50 transition-all hover:-translate-y-1 font-black font-black">
+                    <p class="text-blue-600 font-black text-[10px] uppercase tracking-[0.2em] mb-3 font-black font-black font-black">Global Credential</p>
+                    <h4 class="text-4xl font-black text-slate-900 tracking-tighter italic font-black font-black font-black">트레이너 1기</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards & Licenses -->
+    <section id="awards" class="py-32 px-6 font-black">
+        <div class="max-w-5xl mx-auto font-black">
+            <h2 class="text-4xl font-black mb-20 section-title italic tracking-tighter font-black font-black">Awards & Licenses</h2>
+            <div class="grid md:grid-cols-2 gap-10 font-black font-black">
+                <div class="award-card p-12 rounded-[56px] flex flex-col justify-between shadow-sm h-[320px] transition-all hover:shadow-xl group font-black font-black">
+                    <div>
+                        <span class="badge-premium bg-amber-100 text-amber-700 border-amber-200 font-black font-black">Official Recognition</span>
+                        <h3 class="text-4xl font-black text-slate-900 mt-8 mb-4 tracking-tight leading-tight italic font-black font-black font-black font-black">SW산업협회장상 수상</h3>
+                        <p class="text-slate-600 font-black text-lg font-black font-black font-black">SW교육전문가 부문 (과기정통부/NIA 시행)</p>
+                    </div>
+                    <span class="text-amber-800 font-black tracking-widest text-2xl italic font-black font-black font-black">2022.11</span>
+                </div>
+                <div class="bg-slate-900 p-12 rounded-[56px] text-white flex flex-col justify-between shadow-2xl h-[320px] transition-all hover:bg-blue-900 font-black font-black font-black">
+                    <div>
+                        <span class="badge-premium bg-white/10 text-white border-white/20 font-black font-black font-black">Certified Expert</span>
+                        <h3 class="text-4xl font-black mt-8 mb-4 tracking-tight leading-tight italic text-blue-400 font-black font-black font-black font-black">AI 파이썬 1급</h3>
+                        <p class="text-slate-300 font-black text-lg font-black font-black font-black font-black font-black">ACE 코딩강사 (발령처: (주)맘이랜서)</p>
+                    </div>
+                    <span class="text-slate-400 font-black tracking-widest text-2xl italic font-black font-black font-black font-black font-black">2022.10</span>
+                </div>
+            </div>
+            <div class="mt-10 grid md:grid-cols-2 gap-8 font-black">
+                <div class="p-8 bg-slate-50 rounded-[40px] border border-slate-100 flex justify-between items-center transition-all hover:bg-white hover:border-blue-100 shadow-sm font-black">
+                    <h5 class="text-xl font-black text-slate-900 italic font-black font-black">정보처리기사</h5>
+                    <span class="text-slate-400 italic font-black font-black font-black font-black">2004.12</span>
+                </div>
+                <div class="p-8 bg-slate-50 rounded-[40px] border border-slate-100 flex justify-between items-center transition-all hover:bg-white hover:border-blue-100 shadow-sm font-black">
+                    <h5 class="text-xl font-black text-slate-900 italic font-black font-black font-black">정보기기운용기능사</h5>
+                    <span class="text-slate-400 italic font-black font-black font-black font-black font-black">1996.04</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="py-32 px-6 bg-slate-50 font-black">
+        <div class="max-w-5xl mx-auto font-black">
+            <h2 class="text-4xl font-black mb-20 text-center italic tracking-tighter font-black font-black font-black">Professional Experience</h2>
+            <div class="grid gap-12 font-black font-black font-black">
+                <!-- 동산초 -->
+                <div class="bg-white p-12 rounded-[64px] border border-slate-200 shadow-sm flex flex-col md:flex-row gap-16 transition-all hover:shadow-md font-black font-black">
+                    <div class="md:w-72 shrink-0 font-black">
+                        <h4 class="text-blue-700 font-black text-3xl tracking-tighter mb-4 italic leading-tight font-black font-black font-black">서울 동산초등학교</h4>
+                        <p class="text-sm font-black text-slate-400 uppercase tracking-widest font-black font-black font-black">2024.03 ~ 현재</p>
+                    </div>
+                    <div class="flex-1 md:border-l md:pl-16 border-slate-100 flex flex-col justify-center font-black">
+                        <div class="space-y-8 font-black">
+                            <div>
+                                <div class="flex items-center gap-3 mb-4 font-black">
+                                    <span class="badge-premium bg-blue-700 text-white border-blue-800 uppercase font-black tracking-widest font-black">강사</span>
+                                    <h5 class="text-2xl font-black text-slate-900 italic font-black font-black font-black">3~6학년 AI 코딩 수업</h5>
+                                </div>
+                                <p class="text-slate-600 font-bold ml-1 text-lg leading-relaxed font-black text-black">디지털 리터러시 기초 교육부터 파이썬 및 피지컬 컴퓨팅 심화 과정까지 전담 운영</p>
+                            </div>
+                            <div class="pt-6 border-t border-slate-100 font-black font-black">
+                                <div class="flex items-center gap-3 mb-4 font-black font-black">
+                                    <span class="badge-premium bg-purple-100 text-purple-700 border-purple-200 uppercase font-black tracking-widest font-black font-black font-black">강사</span>
+                                    <h5 class="text-2xl font-black text-slate-900 italic font-black font-black font-black font-black">레고 창의력 수업</h5>
+                                </div>
+                                <p class="text-slate-600 font-bold ml-1 text-lg leading-relaxed font-black text-black">하드웨어 조립 및 로보틱스 메이커 교육을 통한 창의 융합 인재 양성</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 서초여성가족플라자 -->
+                <div class="bg-white p-12 rounded-[64px] border border-slate-200 shadow-sm flex flex-col md:flex-row gap-16 transition-all hover:shadow-md font-black">
+                    <div class="md:w-72 shrink-0 font-black">
+                        <h4 class="text-slate-900 font-black text-3xl tracking-tighter mb-4 italic leading-tight font-black font-black font-black font-black">서초여성가족플라자</h4>
+                        <p class="text-sm font-black text-slate-400 uppercase tracking-widest font-black font-black font-black">2019.06 ~ 현재</p>
+                    </div>
+                    <div class="flex-1 md:border-l md:pl-16 border-slate-100 flex flex-col justify-center font-black text-black">
+                        <span class="badge-premium bg-slate-900 text-white border-slate-900 uppercase w-fit mb-6 font-black tracking-widest font-black font-black">Long-term Partner</span>
+                        <h5 class="text-2xl font-black text-slate-800 mb-6 italic font-black font-black font-black">AI · SW 코딩 · 디지털 리터러시 교육 총괄</h5>
+                        <p class="text-slate-500 text-xl leading-relaxed font-bold font-black text-black">
+                            지역 내 다수의 학교를 대상으로 한 맞춤형 코딩 및 디지털 시민성 교육 프로그램을 기획하고 교육 현장을 총괄 운영합니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 주요 출강 및 교육 협력 기관 -->
+    <section id="network" class="py-32 px-6 bg-white font-black">
+        <div class="max-w-6xl mx-auto font-black">
+            <h2 class="text-4xl font-black mb-12 section-title italic tracking-tighter font-black">Educational Network</h2>
+            <p class="text-slate-400 text-sm font-black uppercase tracking-[0.4em] mb-20 font-black">주요 출강 및 교육 협력 기관</p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="network-card">
+                    <div class="text-blue-600 font-black mb-2 text-xs uppercase tracking-widest">Public Library</div>
+                    <h6 class="font-black text-slate-900 text-lg italic">동작도서관</h6>
+                </div>
+                <div class="network-card">
+                    <div class="text-blue-600 font-black mb-2 text-xs uppercase tracking-widest">Elementary School</div>
+                    <h6 class="font-black text-slate-900 text-lg italic font-black">서울 동산초등학교</h6>
+                </div>
+                <div class="network-card font-black">
+                    <div class="text-blue-600 font-black mb-2 text-xs uppercase tracking-widest">Care Center</div>
+                    <h6 class="font-black text-slate-900 text-lg italic font-black font-black">성북거점형 키움센터</h6>
+                </div>
+                <div class="network-card font-black font-black">
+                    <div class="text-blue-600 font-black mb-2 text-xs uppercase tracking-widest font-black">Saessak Camp</div>
+                    <h6 class="font-black text-slate-900 text-lg italic font-black font-black font-black">디지털 새싹 캠프</h6>
+                </div>
+                <div class="network-card font-black font-black font-black">
+                    <div class="text-blue-600 font-black mb-2 text-xs uppercase tracking-widest font-black font-black">Family Plaza</div>
+                    <h6 class="font-black text-slate-900 text-lg italic font-black font-black font-black font-black">서초여성가족플라자</h6>
+                </div>
+                <div class="network-card font-black font-black font-black font-black">
+                    <div class="text-blue-600 font-black mb-2 text-xs uppercase tracking-widest font-black font-black font-black">Tech Platform</div>
+                    <h6 class="font-black text-slate-900 text-lg italic font-black font-black font-black font-black font-black">레드브릭(Redbrick)</h6>
+                </div>
+                <div class="network-card font-black font-black font-black font-black font-black">
+                    <div class="text-blue-600 font-black mb-2 text-xs uppercase tracking-widest font-black font-black font-black font-black">Global Brand</div>
+                    <h6 class="font-black text-slate-900 text-lg italic font-black font-black font-black font-black font-black font-black">LEGO® Education</h6>
+                </div>
+                <div class="network-card font-black font-black font-black font-black font-black">
+                    <div class="text-blue-600 font-black mb-2 text-xs uppercase tracking-widest font-black font-black font-black font-black font-black font-black">Public Edu</div>
+                    <h6 class="font-black text-slate-900 text-lg italic font-black font-black font-black font-black font-black font-black font-black">다수 초·중학교</h6>
+                </div>
+            </div>
+            
+            <div class="mt-20 p-12 bg-slate-50 rounded-[56px] border border-slate-100 flex flex-col md:flex-row items-center gap-12 font-black">
+                <div class="flex-1 font-black">
+                    <h4 class="text-2xl font-black text-slate-900 mb-6 italic font-black">검증된 교육 콘텐츠의 힘</h4>
+                    <p class="text-slate-500 text-lg leading-relaxed font-bold font-black text-black">
+                        황인진 강사는 수도권 내 공공기관, 학교, 도서관 등 **다양한 교육 현장**에서 신뢰받는 파트너로 활동해왔습니다. 학생들의 연령과 수준에 맞춘 최적화된 커리큘럼으로 최상의 교육 만족도를 제공합니다.
+                    </p>
+                </div>
+                <div class="w-32 h-32 bg-blue-600 rounded-[40px] flex items-center justify-center text-white shadow-2xl rotate-3 font-black">
+                    <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Training -->
+    <section id="education" class="py-32 px-6 bg-slate-50 font-black text-black">
+        <div class="max-w-5xl mx-auto font-black text-black font-black">
+            <h2 class="text-4xl font-black mb-24 text-center italic tracking-tighter section-title font-black text-black font-black font-black">Professional Training</h2>
+            <div class="grid md:grid-cols-3 gap-10 text-center font-black text-black font-black font-black">
+                <div class="p-12 rounded-[56px] bg-white flex flex-col justify-between h-[340px] transition-all hover:shadow-2xl font-black shadow-sm text-black font-black font-black font-black font-black">
+                    <h4 class="text-2xl font-black italic text-slate-800 font-black font-black font-black font-black">레고 에듀케이션<br>교육트레이너 1기</h4>
+                    <div class="pt-8 border-t border-slate-200 font-black font-black font-black font-black">
+                        <p class="text-sm text-slate-500 font-black uppercase tracking-widest font-black font-black font-black">핸즈온 테크놀로지</p>
+                        <p class="text-xs text-slate-400 mt-3 font-black italic uppercase font-black font-black font-black font-black font-black">2023.02</p>
+                    </div>
+                </div>
+                <div class="p-12 rounded-[56px] bg-white flex flex-col justify-between h-[340px] transition-all hover:shadow-2xl font-black shadow-sm text-black font-black font-black font-black font-black font-black">
+                    <h4 class="text-2xl font-black italic text-slate-800 text-blue-700 font-black font-black font-black font-black font-black font-black">코듀에이스 6기<br>SW교육전문가 과정</h4>
+                    <div class="pt-8 border-t border-slate-200 font-black font-black font-black font-black font-black">
+                        <p class="text-sm text-slate-500 font-black uppercase tracking-widest font-black font-black font-black font-black font-black font-black font-black">맘이랜서 수료</p>
+                        <p class="text-xs text-slate-400 mt-3 font-black italic uppercase font-black font-black font-black font-black font-black font-black font-black">2022.07 ~ 11</p>
+                    </div>
+                </div>
+                <div class="p-12 rounded-[56px] bg-white flex flex-col justify-between h-[340px] transition-all hover:shadow-2xl font-black shadow-sm text-black font-black font-black font-black font-black font-black font-black">
+                    <h4 class="text-2xl font-black italic text-slate-800 font-black font-black font-black font-black font-black font-black font-black">강사양성과정<br>및 아카데미</h4>
+                    <div class="pt-8 border-t border-slate-200 font-black font-black font-black font-black font-black font-black font-black">
+                        <p class="text-sm text-slate-500 font-black uppercase tracking-widest font-black font-black font-black font-black font-black font-black font-black font-black font-black font-black font-black">서초여성가족플라자</p>
+                        <p class="text-xs text-slate-400 mt-3 font-black italic uppercase font-black font-black font-black font-black font-black font-black font-black font-black font-black font-black font-black font-black font-black font-black font-black font-black">2018.10 ~ 2019.06</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-32 text-center bg-white border-t border-slate-100 font-black text-black font-black font-black font-black font-black">
+        <div class="max-w-6xl mx-auto px-6 font-black text-black font-black font-black font-black font-black font-black font-black font-black">
+            <h2 class="text-7xl font-black mb-10 tracking-tighter text-slate-900 uppercase italic font-black font-black font-black font-black font-black font-black font-black font-black">Hwang Injin</h2>
+            <p class="text-slate-400 text-sm font-black uppercase tracking-[0.6em] mb-20 font-black text-black font-black font-black font-black font-black font-black">AI · LEGO · DIGITAL LITERACY SPECIALIST</p>
+            <p class="mt-20 text-[11px] text-slate-300 font-black uppercase tracking-[0.4em] font-black text-black font-black font-black font-black font-black font-black">Digital Portfolio © 2026. ALL DATA VERIFIED BY OFFICIAL RECORDS.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
